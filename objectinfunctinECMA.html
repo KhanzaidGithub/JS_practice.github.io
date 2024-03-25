@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function In javascript</title>
+</head>
+
+<body>
+    <script>
+        const myobj = {
+            add: (a) => { console.log(a) },
+            sub: (b) => { console.log(b) },
+        }
+        myobj.add("This is for testing");
+        myobj.sub('This is function in object');
+
+
+        // Arrow function Vs Simple Function 
+        function show1() {
+            console.log('Simple Function');
+        }
+        const show = () => { console.log('Arrow Function') };
+        show1();
+        show();
+
+        const a = (a, b) => { console.log(a + b) }
+        a(2, 3);
+
+
+        const multiply = (a, b) => a * b;
+        console.log(multiply(2, 3));
+
+
+        const str = () => 'This is for arrow return';
+        console.log(str());
+
+        // ECMA Return Object Function
+
+        let objfunc = {
+            add:(num1,num2)=>num1+num2,
+            sub:(num1,num2)=>num1-num2
+        }
+        console.log(objfunc.add(3,2));
+        document.write(objfunc.sub(10,2));
+        const result = objfunc.add(12,2);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

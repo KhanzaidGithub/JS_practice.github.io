@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argue & Parameter</title>
+</head>
+<h2 id="h2"></h2>
+
+<body>
+    <script>
+        /*
+        Function function name(paramter1,parameter2,parameter3){
+            code to be executed 
+            weather you want this code in Console or return to Dom.
+
+            Function parameters are the names listed in the function definition.
+            Function arguments are the real values passed to (and received by) the function.
+
+
+        }
+        */
+
+        function add(x, y) {
+            document.getElementById('h2').innerText = x + y;
+        }
+
+        add(3, 9);
+
+        let obj = {
+            add: function add(x, y) {
+                console.log(x + y);
+            },
+            sub: function sub(x, y) {
+                console.log(x - y);
+            },
+            mult: function multiply(x, y) {
+                console.log(x * y);
+            },
+            divide: function divide(x, y) {
+                console.log(x / y);
+            }
+        }
+
+        obj.mult(2, 4);
+        obj.divide(10, 2);
+        obj.sub(20, 10);
+        obj.add(2,4);
+
+        // For calling function when we just write function it reference parenthesis () excecution
+        
+        // add(Here its called arguemnt);   
+
+
+        // function add(x,y){
+        //     return X+y;
+        //     let new = 'Now this is not catchable after return nothing works right';
+        //     console.log(new);
+        // }
+
+        // function functionname(parameter1,parameter2){
+        //     // Statement  ()there are p
+        // }
+        // functionname(argue1,argue2);
+
+
+function fullname(fname,lname){
+    document.write('Salam ' + fname + lname)
+}
+fullname('Zaid',' khan');
+document.write(`<br>`),
+fullname("Khan"," zaid ")
+
+
+    </script>
+</body>
+
+</html>
